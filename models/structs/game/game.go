@@ -55,9 +55,10 @@ func (g *Game) Initialise() {
 	}
 
 	playerOne = player.Player{
-		Image: spaceShip,
-		XPos:  float64(g.ScreenWidth / 2.0),
-		YPos:  float64(g.ScreenHeight / 2.0),
-		Speed: 4,
+		Image:                  spaceShip,
+		XPos:                   float64(g.ScreenWidth / 2.0),
+		YPos:                   float64(g.ScreenHeight / 2.0),
+		Speed:                  4,
+		ResidualSpeedDecriment: 0.1,
 	}
 }
